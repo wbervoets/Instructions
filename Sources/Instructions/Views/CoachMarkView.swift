@@ -1,6 +1,6 @@
 // CoachMarkView.swift
 //
-// Copyright (c) 2015, 2016 Frédéric Maquin <fred@ephread.com>
+// Copyright (c) 2015 - 2017 Frédéric Maquin <fred@ephread.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -156,8 +156,8 @@ class CoachMarkView: UIView {
 
 // MARK: - Protocol conformance | CoachMarkBodyHighlightArrowDelegate
 extension CoachMarkView: CoachMarkBodyHighlightArrowDelegate {
-    func highlightArrow(_ highlighted: Bool) {
-        self.arrowView?.highlighted = highlighted
+    func highlightArrow(_ isHighlighted: Bool) {
+        self.arrowView?.isHighlighted = isHighlighted
     }
 }
 
